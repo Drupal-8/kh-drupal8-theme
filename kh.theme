@@ -1,0 +1,18 @@
+<?php
+
+/**
+ *	Add jquery and theme level scripts
+ */
+function kh_page_alter(&$page) {
+	$page['#attached']['library'][] = 'kh/kh-corescripts';
+}
+
+/**
+ *	Implements hook_preprocess_node
+ */
+function kh_preprocess_node(&$vars) {
+	if ($vars['node']->getType() == 'article') {
+		$unformatted_date = $vars['node']->getCreatedTime();
+		$vars['date'] = format_date($unformatted_date, 'custom', 'M d, Y');
+	}
+}
