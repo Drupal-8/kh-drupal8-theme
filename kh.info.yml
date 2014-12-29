@@ -6,6 +6,7 @@ stylesheets:
   all:
     - css/styles.css
 regions:
+  home_slider: 'Home Page Slider'
   header: 'Header'
   navigation: 'Navigation'
   content: 'Content'
