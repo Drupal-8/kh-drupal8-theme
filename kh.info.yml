@@ -1,19 +1,15 @@
-name: 'Kaleb Heitzman'
+name: Kaleb Heitzman
 type: theme
-description: 'A theme for kalebheitzman.com'
-package: Custom
+description: A theme for kalebheitzman.com
+core: 8.x
+base theme: classy
 stylesheets: 
   all:
-    - css/styles.css
+    css: css/styles.css
 regions:
-  home_slider: 'Home Page Slider'
-  header: 'Header'
-  navigation: 'Navigation'
-  content: 'Content'
-  sidebar_first: 'Sidebar first'
-  footer: 'Footer'
-features:
-  - favicon
-  - logo
-version: 8.0.x
-core: 8.x
+  header: Header
+  featured: Featured
+  content: Content
+  sidebar_first: First sidebar
+  sidebar_second: Second sidebar
+  footer: Footer

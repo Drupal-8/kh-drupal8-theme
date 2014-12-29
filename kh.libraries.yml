@@ -1,6 +1,0 @@
-kh-corescripts:
-  version: VERSION
-  js:
-    js/kh.js: {}
-  dependencies:
-    - core/jquery
